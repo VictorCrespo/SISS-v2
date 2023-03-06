@@ -13,7 +13,7 @@ func main() {
 	err := godotenv.Load(".env")
 
 	if err != nil {
-		log.Fatalf("error loading .env file")
+		log.Fatal("error loading .env file")
 	}
 
 	_, err = database.GetConnectionPool()
